@@ -93,30 +93,17 @@ function uniquifyArray(wordsUnique) {
 // Iteration #6: Find elements
 
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
-const wordToFind= 'machine'
+const theWord= 'machine'
 
 // My code
-/*function doesWordExist(wordsFind) {
+function doesWordExist(wordsFind, theWord) {
     if(wordsFind.length === 0) return null
-    if((wordsFind.includes(wordToFind)) && (wordsFind.length===1)) return true
+    if((wordsFind.includes(theWord)) && (wordsFind.length===1)) return true
 
     for(let i=0; i<= wordsFind.length-1; i++) {
-      if(wordToFind=== wordsFind[i]) return true
+      if(theWord=== wordsFind[i]) return true
     }
     return false 
-}*/
-
- // Chat-GPT code
- function doesWordExist(wordsFind) {
-  if (wordsFind.length === 0) return false;
-
-  for (let i = 0; i < wordsFind.length; i++) {
-      if (wordToFind === wordsFind[i]) {
-          return true;
-      }
-  }
-
-  return false;
 }
 
 
